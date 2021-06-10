@@ -18,7 +18,7 @@ function App() {
           <DetailContainer/>
         </Route>
 
-        <Route path="/pokemon-fetch-app/pokemon">
+        <Route exact path="/pokemon-fetch-app/pokemon">
           <MainContainer/>
         </Route>
 
