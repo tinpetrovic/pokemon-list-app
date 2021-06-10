@@ -78,7 +78,7 @@ console.log(pokemon)
             {loading ? <Main.Title>Loading...</Main.Title> : 
             <Main.Wrapper>
               {pokemon.map(pok => (
-                  <Main.Link to={`/pokemon/${pok.name}`} key={pok.id}>
+                  <Main.Link to={`/pokemon-fetch-app/pokemon/${pok.name}`} key={pok.id}>
                     <Main.Card type={pok.types[0]}>
                         <Main.CardImage src={pok.sprites.front_default}/>
                         <Main.CardTitle>{pok.name}</Main.CardTitle>

@@ -10,7 +10,7 @@ export default function HomeContainer() {
             <Home.Image />
             <Home.Title>Tin Petrović</Home.Title>
             <Home.Text>This is my Landing Page</Home.Text>
-            <Home.Link to="/pokemon">To Main Page</Home.Link>
+            <Home.Link to="/pokemon-fetch-app/pokemon">To Main Page</Home.Link>
             <Home.Text>Github:<Home.Anchor href="https://github.com/tinpetrovic"><FaLinkedin/></Home.Anchor></Home.Text>
             <Home.Text>LinkedIn:<Home.Anchor href="https://www.linkedin.com/in/tin-petrović-1b2287211"><FaGithub/></Home.Anchor></Home.Text>
        </Home.Container>
