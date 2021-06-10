@@ -10,15 +10,15 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/pokemon-fetch-app">
           <HomeContainer/>
         </Route>
 
-        <Route exact path="/pokemon/:pokemonId">
+        <Route exact path="/pokemon-fetch-app/pokemon/:pokemonId">
           <DetailContainer/>
         </Route>
 
-        <Route path="/pokemon">
+        <Route path="/pokemon-fetch-app/pokemon">
           <MainContainer/>
         </Route>
 
