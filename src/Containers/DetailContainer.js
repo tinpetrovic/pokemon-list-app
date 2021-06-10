@@ -28,10 +28,10 @@ export default function DetailContainer() {
     return (
         <div>
             <HeaderContainer />
-            <PokemonDetails.Link to="/pokemon" >Back</PokemonDetails.Link>
+            <PokemonDetails.Link to="/pokemon-fetch-app/pokemon" >Back</PokemonDetails.Link>
             {loading ? <PokemonDetails.Title>Loading</PokemonDetails.Title> : 
                 <PokemonDetails.Container>
-                        {pokemonData.sprites == undefined ? 
+                        {pokemonData.sprites === undefined ? 
                         <PokemonDetails.Text>Loading...</PokemonDetails.Text> 
                         : 
                         <PokemonDetails.Flex>
@@ -42,14 +42,14 @@ export default function DetailContainer() {
 
                         <PokemonDetails.Title>{pokemonData.name}</PokemonDetails.Title>
                         
-                        {pokemonData.types == undefined ? 
+                        {pokemonData.types === undefined ? 
                         <PokemonDetails.Text>Loading...</PokemonDetails.Text> 
                         : 
                         <PokemonDetails.Text>Pokemon Type: {pokemonData.types.map(type => <span>{type.type.name} </span>)}</PokemonDetails.Text>}
                         
                         <PokemonDetails.Wrapper>
                             <PokemonDetails.SubTitle> Base Stats: </PokemonDetails.SubTitle>
-                            {pokemonData.stats == undefined ? 
+                            {pokemonData.stats === undefined ? 
                             <PokemonDetails.Text>Loading...</PokemonDetails.Text> 
                             :
                             pokemonData.stats.map(stat => (

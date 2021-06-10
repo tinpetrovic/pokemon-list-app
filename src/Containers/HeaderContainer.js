@@ -6,7 +6,7 @@ export default function HeaderContainer() {
         <div>
             <Header.Container>
                 <Header.Title>React Pokemon App</Header.Title>
-                <Header.Link to="/">To Landing Page</Header.Link>
+                <Header.Link to="/pokemon-fetch-app">To Landing Page</Header.Link>
             </Header.Container>
         </div>
     )
