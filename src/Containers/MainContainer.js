@@ -14,7 +14,7 @@ export default function MainContainer() {
 
     let pokemonArray = []
 
-
+    
 
 
    const fetchPokemons = async () => {
@@ -34,9 +34,15 @@ export default function MainContainer() {
 
 
     useEffect(()=>{
+        let canceled = false
+
+        if(!canceled) {
         getPokemonData()
         fetchPokemons()
         setLoading(false)
+    }
+
+    return () => (canceled = true)
     }, [first])
 
     /* Pagination */
