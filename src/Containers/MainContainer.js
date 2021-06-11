@@ -15,6 +15,8 @@ export default function MainContainer() {
     let pokemonArray = []
 
 
+
+
    const fetchPokemons = async () => {
     
     for(let i = first; i <= next; i ++) {
@@ -79,7 +81,23 @@ export default function MainContainer() {
             <Main.Wrapper>
               {pokemon.map(pok => (
                   <Main.Link to={`/pokemon-fetch-app/pokemon/${pok.name}`} key={pok.id}>
-                    <Main.Card>
+                    <Main.Card 
+                    bg={pok.types[0].type.name === "fire" ?  "#ff8566" :
+                    pok.types[0].type.name === "poison" ?  "#66ff66" :
+                    pok.types[0].type.name === "bug" ?  "#66ff66" :
+                    pok.types[0].type.name === "grass" ?  "#66ff66" : 
+                    pok.types[0].type.name === "water" ?  "#b3d9ff" : 
+                    pok.types[0].type.name === "ice" ?  "#b3d9ff" :
+                    pok.types[0].type.name === "electric" ?  "#ffff66" :
+                    pok.types[0].type.name === "ground" ?  "#e6ccb3" :
+                    pok.types[0].type.name === "rock" ?  "#e6ccb3" :
+                    pok.types[0].type.name === "fighting" ?  "#e6ccb3" :
+                    pok.types[0].type.name === "fairy" ?  "#f2f2f2" :
+                    pok.types[0].type.name === "dragon" ?  "#f2f2f2" :
+                    pok.types[0].type.name === "psychic" ?  "#cc99ff" :
+                    pok.types[0].type.name === "ghost" ?  "#cc99ff" :
+                    pok.types[0].type.name === "normal" ?  "#f2f2f2" :null} 
+                    >
                         <Main.CardImage src={pok.sprites.front_default}/>
                         <Main.CardTitle>{pok.name}</Main.CardTitle>
                     </Main.Card>

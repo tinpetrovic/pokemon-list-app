@@ -73,7 +73,7 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #737373;
+    background: ${(props) => props.bg};
     padding: 1em;
     margin: 1em;
     height: 300px;
