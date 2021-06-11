@@ -82,10 +82,10 @@ export default function MainContainer() {
               {pokemon.map(pok => (
                   <Main.Link to={`/pokemon-fetch-app/pokemon/${pok.name}`} key={pok.id}>
                     <Main.Card 
-                    bg={pok.types[0].type.name === "fire" ?  "#ff8566" :
-                    pok.types[0].type.name === "poison" ?  "#66ff66" :
-                    pok.types[0].type.name === "bug" ?  "#66ff66" :
-                    pok.types[0].type.name === "grass" ?  "#66ff66" : 
+                    bg={pok.types[0].type.name === "fire" ?  "#ffad99" :
+                    pok.types[0].type.name === "poison" ?  "#b3ffb3" :
+                    pok.types[0].type.name === "bug" ?  "#b3ffb3" :
+                    pok.types[0].type.name === "grass" ?  "#b3ffb3" : 
                     pok.types[0].type.name === "water" ?  "#b3d9ff" : 
                     pok.types[0].type.name === "ice" ?  "#b3d9ff" :
                     pok.types[0].type.name === "electric" ?  "#ffff66" :
