@@ -13,7 +13,7 @@ export const Image = styled.img`
     background: #fff;
     max-width: 100%;
     object-fit: cover;
-    height: 50vh;
+    max-height: 40vh;
     border-radius: 50%;
 
 `;
