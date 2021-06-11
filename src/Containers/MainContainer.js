@@ -63,7 +63,7 @@ export default function MainContainer() {
         setNext(next + 20)
 }
 
-console.log(pokemon)
+
 
     return (
         <div>
@@ -72,14 +72,14 @@ console.log(pokemon)
                 <Main.Wrap>
                     <Main.Button disabled={first === 1} onClick={prevPage}>Prev</Main.Button>
                     {first > 20 && <Main.Button onClick={firstPage}>First</Main.Button>}
-                    <Main.Button disabled={next >=151} onClick={nextPage}>Next</Main.Button>
+                    <Main.Button disabled={next >= 151} onClick={nextPage}>Next</Main.Button>
                 </Main.Wrap>
                 : null}
             {loading ? <Main.Title>Loading...</Main.Title> : 
             <Main.Wrapper>
               {pokemon.map(pok => (
                   <Main.Link to={`/pokemon-fetch-app/pokemon/${pok.name}`} key={pok.id}>
-                    <Main.Card type={pok.types[0]}>
+                    <Main.Card>
                         <Main.CardImage src={pok.sprites.front_default}/>
                         <Main.CardTitle>{pok.name}</Main.CardTitle>
                     </Main.Card>

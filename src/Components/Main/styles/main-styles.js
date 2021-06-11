@@ -44,6 +44,11 @@ export const Button = styled.button`
     &:hover {
         background: #63b1ff;
     }
+
+    &:focus {
+        background: #63b1ff;
+    }
+
     &:disabled {
         background: red;
         opacity: .7;
@@ -72,6 +77,13 @@ export const Card = styled.div`
     padding: 1em;
     margin: 1em;
     height: 300px;
+
+&:hover {
+    box-shadow: 0px 0px 5px 2px #fff,
+                0px 0px 5px 4px #ff6666,
+                0px 0px 5px 6px #fff;
+}
+
 `;
 
 export const CardTitle = styled.h2`
