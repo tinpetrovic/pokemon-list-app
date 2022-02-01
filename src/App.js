@@ -1,8 +1,11 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import HomeContainer from "./Containers/HomeContainer"
-import MainContainer from "./Containers/MainContainer"
-import DetailContainer from "./Containers/DetailContainer"
+import Navbar from "./Components/Navbar/Navbar";
+import Landing from "./Components/Landing/Landing";
+import Main from "./Components/Main/Main";
+import Specific from "./Components/Specific/Specific";
+import "./global.scss"
+
 
 
 function App() {
@@ -11,18 +14,18 @@ function App() {
     <div>
       <Switch>
         <Route exact path="/pokemon-fetch-app">
-          <HomeContainer/>
+          <Landing/>
         </Route>
 
-        <Route exact path="/pokemon-fetch-app/pokemon/:pokemonId">
-          <DetailContainer/>
+        <Route path="/pokemon-fetch-app/main">
+          <Navbar />
+          <Main />
         </Route>
 
-        <Route exact path="/pokemon-fetch-app/pokemon">
-          <MainContainer/>
+        <Route path="/pokemon-fetch-app/:pokemonid">
+          <Navbar />
+          <Specific />
         </Route>
-
-        
 
       </Switch>
     </div>

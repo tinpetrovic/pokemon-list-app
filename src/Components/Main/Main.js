@@ -1,56 +1,68 @@
-import React from 'react'
-import { Container, Title, Wrap, Button, Wrapper, Link, Card, CardTitle, CardImage, CardText } from "./styles/main-styles"
+import React, {useState, useEffect} from "react";
+import "./main.scss";
+import Card from "../Card/Card";
+import Pagination from "../Pagination/Pagination";
 
 
-export default function Main({ children, ...restProps }) {
 
+export default function Main() {
+    const [pokemon, setPokemon] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [firstPokemon, setFirstPokemon] = useState(1)
+    const [lastPokemon, setLastPokemon] = useState(20)
+    let pokemonArray = []
 
-    return (
-        <Container {...restProps}>
-           {children}
-        </Container>
+    const fetchPokemon = async () => {
+        for(let i = firstPokemon; i <= lastPokemon; i ++) {
+            if (i >= 152) {break}
+            pokemonArray.push(await getPokemonData(i))
+        }
+            setPokemon(pokemonArray)
+            setLoading(false)
+    }
+
+    const getPokemonData = async (id) => {
+        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+        const data = await res.json()
+        return data
+    }
+
+    
+    useEffect(() => {
+        let canceled = false
+        setLoading(true)
+        if (!canceled) {
+            getPokemonData()
+            fetchPokemon()
+            setLoading(false)
+    
+        }
+        return () => (canceled = true)
+    },[firstPokemon])
+    
+return (
+        <div className="main-container">
+            {!loading && 
+            <Pagination
+            firstPokemon={firstPokemon}
+            lastPokemon={lastPokemon} 
+            setLoading={setLoading}
+            setPokemon={setPokemon}
+            setFirstPokemon={setFirstPokemon}
+            setLastPokemon={setLastPokemon}
+            pokemonArray={pokemonArray}
+            pokemon={pokemon}
+            />}
+            <div className="main-wrapper">
+              {loading ? <div className="text-container"><h2>Loading...</h2></div> :  
+                  pokemon.map((poke,i) => {
+                    return <Card
+                    key={poke.id} 
+                    poke={poke}
+                    i={i}
+                    />
+                  })}
+            </div>         
+        </div>
     )
 }
-
-Main.Container = function MainContainer ({ children, ...restProps }) {
-    return <Container {...restProps}>{children}</Container>
-}
-
-Main.Title = function MainTitle ({ children, ...restProps }) {
-    return <Title {...restProps}>{children}</Title>
-}
-
-Main.Wrap = function MainWrap ({ children, ...restProps }) {
-    return <Wrap {...restProps}>{children}</Wrap>
-}
-
-Main.Button = function MainButton ({ children, ...restProps }) {
-    return <Button {...restProps}>{children}</Button>
-}
-
-Main.Wrapper = function MainWrapper ({ children, ...restProps }) {
-    return <Wrapper {...restProps}>{children}</Wrapper>
-}
-
-Main.Link = function MainLink ({ children, ...restProps }) {
-    return <Link {...restProps}>{children}</Link>
-}
-
-Main.Card = function MainCard ({ children, ...restProps }) {
-    return <Card {...restProps}>{children}</Card>
-}
-
-Main.CardTitle = function MainCardTitle ({ children, ...restProps }) {
-    return <CardTitle {...restProps}>{children}</CardTitle>
-}
-
-Main.CardImage = function MainCardImage ({ ...restProps }) {
-    return <CardImage {...restProps}/>
-}
-
-Main.CardText = function MainCardText ({ children, ...restProps }) {
-    return <CardText {...restProps}>{children}</CardText>
-}
-
-
-

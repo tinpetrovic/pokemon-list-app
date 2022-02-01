@@ -1,0 +1,41 @@
+.pagination-wrapper {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 3em;
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.btn:hover, .btn:focus {
+  border: 2px solid magenta;
+}
+
+:disabled {
+  background: #da4545;
+  cursor: not-allowed;
+  opacity: .8;
+}
+
+:disabled:hover {
+  border: 2px solid #fff;
+}
+/*# sourceMappingURL=pagination.css.map */

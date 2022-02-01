@@ -1,0 +1,52 @@
+@import "../../colors";
+
+.landing-container {
+    height: 100vh;
+    background-image: url("../../Images/pokemon.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing-wrapper {
+    width: 80%;
+    text-align: center;
+    background: $white-clr;
+    padding: 1em;
+    color: $black-clr;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+}
+
+
+
+.landing-button {
+    display: inline-block;
+    width: 100px; 
+    cursor: pointer;
+    border: none;
+    border-radius: 1000px;
+    transform: scale(1);
+    transition: 5ms ease-in-out;
+    
+    
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+        
+    }
+}
+
+.landing-button img {
+    width: 100%;
+    border-radius: 1000px;
+}
+

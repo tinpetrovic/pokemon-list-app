@@ -1,0 +1,32 @@
+.card-wrapper {
+    height: 350px;
+    border: 10px solid rgb(236, 217, 39);
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 5px 5px #fff;
+    }
+}
+
+.card-link {
+    cursor:pointer;
+    height: 100%;
+    width: 100%;
+    padding-top: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.card-link img {
+    height: 200px;
+}
+
+.card-link h2 {
+    margin: 0;
+}
+

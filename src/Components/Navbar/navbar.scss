@@ -1,0 +1,31 @@
+.navbar-container {
+    height: 150px;
+    
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5em;
+    text-transform: uppercase;
+}
+
+.navbar-logo {
+    transition: transform 20ms ease;
+    border-radius: 1000px;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.navbar-logo img {
+    display: block;
+    height: 100px;  
+}
+
+@media(min-width: 720px) {
+    .navbar-wrapper {
+        margin: 1em;
+    }
+}

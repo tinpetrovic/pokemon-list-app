@@ -1,0 +1,54 @@
+.specific-container {
+    background: #b0b0b0;
+    background-image: url("../../Images/images-pokemon.jpg");
+    background-size: cover;
+    background-blend-mode:soft-light;
+    min-height: 100vh;
+}
+
+.specific-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.specific-wrapper h1 {
+    text-transform: capitalize;
+    margin-bottom: .5em;
+}
+
+.main-img img {
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.pokemon-img-secondary {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 2em;
+}
+
+.data-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.height {
+    flex-direction: row;
+}
+
+.stats h3,
+.moves h3 {
+    margin: 0;
+    text-align: center;
+}
+

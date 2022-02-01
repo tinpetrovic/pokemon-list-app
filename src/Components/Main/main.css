@@ -1,0 +1,95 @@
+.main-container {
+  background: #b0b0b0;
+  background-image: url("../../Images/thumb-1920-486262.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  place-content: center;
+  grid-gap: 2em;
+  padding: 2em;
+}
+
+.text-container {
+  color: #09ccda;
+  border-radius: 1000px;
+  padding: 1em;
+  height: 200px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  border: 10px solid #fff;
+  -webkit-animation-name: load;
+          animation-name: load;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes load {
+  25% {
+    border-top: 10px solid #04646b;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+  }
+  50% {
+    border-right: 10px solid #04646b;
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+  }
+  75% {
+    border-bottom: 10px solid #04646b;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-top: 10px solid #fff;
+  }
+  100% {
+    border-left: 10px solid #04646b;
+    border-bottom: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+  }
+}
+
+@keyframes load {
+  25% {
+    border-top: 10px solid #04646b;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+  }
+  50% {
+    border-right: 10px solid #04646b;
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+  }
+  75% {
+    border-bottom: 10px solid #04646b;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-top: 10px solid #fff;
+  }
+  100% {
+    border-left: 10px solid #04646b;
+    border-bottom: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+  }
+}
+/*# sourceMappingURL=main.css.map */
