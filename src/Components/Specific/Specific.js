@@ -39,14 +39,14 @@ return (
                     </div>
 
                     <div className="data-cont">
-                        <p>{`Type/s: ${pokemonData.types.map((type) => {
+                        <h3>{`Types: ${pokemonData.types.map((type) => {
                             return `  ${type.type.name}`
-                        })}`}</p>
+                        })}`}</h3>
                     </div>
 
                     <div className="data-cont height">
-                        <p>Height: {pokemonData.height}</p>
-                        <p>Weight: {pokemonData.weight}</p>
+                        <h3>Height: {pokemonData.height}  </h3>
+                        <h3>Weight: {pokemonData.weight}  </h3>
                     </div>
 
                     <div className="data-cont">
