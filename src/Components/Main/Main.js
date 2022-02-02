@@ -54,7 +54,7 @@ return (
             pokemon={pokemon}
             />}
             <div className="main-wrapper">
-              {loading ? <div className="text-container"><h2>Loading...</h2></div> :  
+              {pokemon.length < 1 ? <div className="text-container"><h2>Loading...</h2></div> :  
                   pokemon.map((poke,i) => {
                     return <Card
                     key={poke.id} 

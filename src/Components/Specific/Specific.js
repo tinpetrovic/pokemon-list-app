@@ -25,7 +25,7 @@ export default function Specific() {
 
 return (
         <div className="specific-container">
-            {loading ? <div className="text-container"><h2>Loading...</h2></div> :
+            {pokemonData.length < 1 ? <div className="text-container"><h2>Loading...</h2></div> :
             <div className="specific-wrapper">
                 <h1>{pokemonData.name}</h1>
                 {pokemonData.sprites && 

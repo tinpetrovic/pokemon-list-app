@@ -4,6 +4,9 @@
     background-size: cover;
     background-blend-mode:soft-light;
     min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .specific-wrapper {
@@ -13,6 +16,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.text-container {
+    margin-top: 1em;
 }
 
 .specific-wrapper h1 {
@@ -56,7 +63,7 @@ h3 + h3 {
 
 .stats h3,
 .moves h3 {
-    margin: 0 auto .5em;;
+    margin: 0 auto .5em;
     text-align: center;
 }
 
