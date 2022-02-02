@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/pokemon-fetch-app">
+        <Route exact path="/pokemon-fetch-app/">
           <Landing/>
         </Route>
 
