@@ -13,16 +13,16 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/pokemon-fetch-app/">
+        <Route exact path="/pokemon-list-app/">
           <Landing/>
         </Route>
 
-        <Route path="/pokemon-fetch-app/main">
+        <Route path="/pokemon-list-app/main">
           <Navbar />
           <Main />
         </Route>
 
-        <Route path="/pokemon-fetch-app/:pokemonid">
+        <Route path="/pokemon-list-app/:pokemonid">
           <Navbar />
           <Specific />
         </Route>

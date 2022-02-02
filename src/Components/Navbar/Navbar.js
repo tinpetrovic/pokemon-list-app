@@ -9,7 +9,7 @@ export default function Navbar() {
 return (
         <div className="navbar-container">
             <div className="navbar-wrapper">
-                <Link className="navbar-logo" to="/pokemon-fetch-app">
+                <Link className="navbar-logo" to="/pokemon-list-app/">
                     <img src={pic} alt="pokeball" />
                 </Link>
                 <h1>Pokemon Search App</h1>
