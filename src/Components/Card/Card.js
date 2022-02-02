@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import "./card.scss";
 
 
 export default function Card({poke, i}) {
-    const {pokemonid} = useParams()
 
     const styles =  poke.types[0].type.name === "poison" ?  "#b3ffb3" :
                     poke.types[0].type.name === "fire" ?  "#ff9999" :
@@ -26,7 +25,7 @@ export default function Card({poke, i}) {
 return (
         <div className="card-container">
             <div className="card-wrapper" style={{ backgroundColor: `${styles}`}}>
-                <Link className="card-link" to={`/pokemon-fetch-app/${poke.name}`}>
+                <Link className="card-link" to={`/pokemon-list-app/${poke.name}`}>
                     <p>{`ID: ${poke.id}.`}</p>
                     {poke.sprites && 
                     <img src={poke.sprites.front_default} alt={poke.name} />

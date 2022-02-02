@@ -11,7 +11,7 @@ return (
             <div className="landing-wrapper">
                 <h1>Pokemon Search App</h1>
                 <button className="landing-button">
-                    <Link to="/pokemon-fetch-app/main">
+                    <Link to="/pokemon-list-app/main">
                         <img src={pic} alt="pokeball" />
                     </Link> 
                 </button>
