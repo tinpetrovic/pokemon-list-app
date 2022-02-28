@@ -4,6 +4,15 @@
   background-size: cover;
   background-blend-mode: soft-light;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .specific-wrapper {
@@ -22,6 +31,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.text-container {
+  margin-top: 1em;
 }
 
 .specific-wrapper h1 {

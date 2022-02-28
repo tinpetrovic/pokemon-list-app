@@ -21,6 +21,7 @@
   padding: 1em;
   height: 200px;
   width: 200px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
