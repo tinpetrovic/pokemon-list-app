@@ -19,9 +19,8 @@ export default function Specific() {
     useEffect(() => {
         getPokemonData(pokemonid)
         setLoading(false)
-    }, [])
-
-    console.log(pokemonData)
+        return getPokemonData()
+    }, [pokemonid])
 
 return (
         <div className="specific-container">
