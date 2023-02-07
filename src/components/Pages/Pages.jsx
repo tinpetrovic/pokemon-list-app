@@ -15,7 +15,7 @@ function Pages({ setPokemonList }) {
 
     const handlePrev = () => {
       setPokemonList([]) 
-      setPageOffset(pageOffset + 20)
+      setPageOffset(pageOffset - 20)
       if (pageOffset < 20) {
         setPageOffset(0)
       }
