@@ -1,7 +1,7 @@
 {
   "main.css": "/pokemon-list-app/static/css/main.0258f98c.chunk.css",
-  "main.js": "/pokemon-list-app/static/js/main.4c73aff8.chunk.js",
-  "main.js.map": "/pokemon-list-app/static/js/main.4c73aff8.chunk.js.map",
+  "main.js": "/pokemon-list-app/static/js/main.0ff1c052.chunk.js",
+  "main.js.map": "/pokemon-list-app/static/js/main.0ff1c052.chunk.js.map",
   "static/js/1.dad8d137.chunk.js": "/pokemon-list-app/static/js/1.dad8d137.chunk.js",
   "static/js/1.dad8d137.chunk.js.map": "/pokemon-list-app/static/js/1.dad8d137.chunk.js.map",
   "static/css/2.3d5380d8.chunk.css": "/pokemon-list-app/static/css/2.3d5380d8.chunk.css",
@@ -14,6 +14,6 @@
   "static/css/main.0258f98c.chunk.css.map": "/pokemon-list-app/static/css/main.0258f98c.chunk.css.map",
   "static/css/2.3d5380d8.chunk.css.map": "/pokemon-list-app/static/css/2.3d5380d8.chunk.css.map",
   "index.html": "/pokemon-list-app/index.html",
-  "precache-manifest.66910a369c548470479a943782cc2fa0.js": "/pokemon-list-app/precache-manifest.66910a369c548470479a943782cc2fa0.js",
+  "precache-manifest.0b0fd9c715f7e9c6bdfa4b6b183c8f63.js": "/pokemon-list-app/precache-manifest.0b0fd9c715f7e9c6bdfa4b6b183c8f63.js",
   "service-worker.js": "/pokemon-list-app/service-worker.js"
 }
