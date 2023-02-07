@@ -5,7 +5,7 @@ import {cardStyles, progressVariants} from '../../styles/cardStyles'
 
 function PokemonCard({pokemon}) {
   return (
-    <Link to={`/pokemon/${pokemon.name}`} className="card-link w-sm-100 text-dark">
+    <Link to={`/pokemon-list-app/pokemon/${pokemon.name}`} className="card-link w-sm-100 text-dark">
       <Card className={cardStyles(pokemon.types)}>
         <Card.Img className="img" variant="top" src={pokemon.sprites.front_default} />
         <Card.Body>
