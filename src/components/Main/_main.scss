@@ -1,0 +1,23 @@
+
+.main-nav {
+    background-color: rgb(255, 144, 144);
+}
+
+/* SPINNER */
+$spinner-width: 250px;
+$spinner-height: 250px;
+
+.spinner-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.spinner {
+    width: $spinner-width;
+    height:$spinner-height;
+    position: absolute;
+    top: calc(50% - ($spinner-height / 2));
+    left: calc(50% - ($spinner-width / 2));
+}

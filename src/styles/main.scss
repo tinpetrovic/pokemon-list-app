@@ -1,0 +1,13 @@
+@import "./imports";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.large {
+    font-size: 32px;
+}

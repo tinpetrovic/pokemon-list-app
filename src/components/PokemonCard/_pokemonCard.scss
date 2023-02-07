@@ -1,0 +1,51 @@
+.card-link {
+    text-decoration: none;
+
+    .card-pokemon {
+        &:hover {
+            box-shadow: 0 0 6px 1px rgba(170, 170, 170, 0.5);
+        }
+    }
+    
+    .img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-title {
+        text-transform: capitalize;
+        font-size: 36px;
+        text-align: center;
+    }
+
+}
+
+.grass {
+    background-color: rgb(237, 252, 237);
+}
+
+.fire {
+    background-color: rgb(255, 241, 236);
+}
+
+.water {
+    background-color: rgb(238, 247, 255);
+}
+
+.electric {
+    background-color: rgb(255, 255, 237);
+}
+
+.ground {
+    background-color: rgb(255, 249, 237);
+}
+
+.psychic {
+    background-color: rgb(244, 237, 255);
+}
+
+.normal {
+    background-color: rgb(245, 245, 245);
+}

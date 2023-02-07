@@ -1,0 +1,36 @@
+.landing-container {
+    height: 100vh;
+    background: #000;
+    background-image: url("../images/pokeballs.jpg");
+}
+
+.pokeball-wrapper {
+    height: 300px;
+    
+    .card-title {
+        font-size: 2rem;
+        margin-bottom: .5em;
+    }
+    
+    .card-text {
+        margin-top: auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+
+
+.pokeball-image {
+    width: 150px;
+    height: 150px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2) rotate(360deg);
+    }
+
+    &:hover.pokeball-image {
+        margin-bottom: 1em;
+    }
+}
