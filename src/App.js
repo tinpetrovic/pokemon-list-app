@@ -10,9 +10,9 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/pokemon" element={<Main />} />
-      <Route path="/pokemon/:pokemonId" element={<PokemonInfo />} />
+      <Route path="/pokemon-list-app/" element={<Landing />} />
+      <Route path="/pokemon-list-app/pokemon" element={<Main />} />
+      <Route path="/pokemon-list-app/pokemon/:pokemonId" element={<PokemonInfo />} />
     </Routes>
     </>
   );
