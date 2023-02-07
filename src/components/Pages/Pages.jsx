@@ -33,13 +33,10 @@ function Pages({ setPokemonList }) {
 
   return (
     <Pagination>
-      <Pagination.First disabled={pageOffset === 0} onClick={hadleFirst}/>
-      <Pagination.Prev disabled={pageOffset === 0} onClick={handlePrev}/>
-
-      <Pagination.Item active>{1}</Pagination.Item>
-
-      <Pagination.Next disabled={pageOffset > 150} onClick={handleNext}/>
-      <Pagination.Last disabled={pageOffset === 151} onClick={handleLast} />
+      <Pagination.First disabled={pageOffset === 0} onClick={hadleFirst}>First</Pagination.First>
+      <Pagination.Prev disabled={pageOffset === 0} onClick={handlePrev}>Prev</Pagination.Prev>
+      <Pagination.Next disabled={pageOffset > 150} onClick={handleNext}>Next</Pagination.Next>
+      <Pagination.Last disabled={pageOffset === 151} onClick={handleLast}>Last</Pagination.Last>
     </Pagination>
   )
 }
