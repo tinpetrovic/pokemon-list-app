@@ -2,7 +2,6 @@ import React from 'react'
 import { Carousel } from 'react-bootstrap'
 
 const PokeCarousel = ({pokemon}) => {
-    console.log(pokemon)
   return (
     <Carousel className="carousel">
         <Carousel.Item>
