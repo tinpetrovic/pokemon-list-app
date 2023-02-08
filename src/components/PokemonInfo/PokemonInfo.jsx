@@ -65,7 +65,7 @@ function PokemonInfo() {
 
       <Container>
         <Row className="justify-content-center p-2">
-          <h3 className='text-center mb-3'>Moves <span className='move-count'>{pokemon.moves && pokemon.moves.length}</span></h3>
+          <h3 className={darkTheme ? "text-light text-center mb-3" : "text-dark text-center mb-3"}>Moves <span className='move-count'>{pokemon.moves && pokemon.moves.length}</span></h3>
           {
             pokemonMoves.length !== 0 ?
             pokemonMoves.map((move, i) => {
