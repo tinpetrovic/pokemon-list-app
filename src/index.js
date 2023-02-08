@@ -5,15 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { FetchContextProvider } from './context/FetchContext';
+import { ThemeContextProvider } from './context/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
 
     <Router>
-      <FetchContextProvider>
-        <App />
-      </FetchContextProvider>
+      <ThemeContextProvider>
+        <FetchContextProvider>
+          <App />
+        </FetchContextProvider>
+      </ThemeContextProvider>
     </Router>
 
 );

@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react'
 import Pages from '../Pages/Pages'
 import { FetchContext } from '../../context/FetchContext'
+import { ThemeContext } from '../../context/ThemeContext'
 import Nav from '../Nav/Nav'
 import PokemonCard from '../PokemonCard/PokemonCard'
 import { Col, Container, Row, Spinner } from 'react-bootstrap'
@@ -8,16 +9,15 @@ import { Col, Container, Row, Spinner } from 'react-bootstrap'
 
 function Main() {
   const [pageOffset] = useContext(FetchContext)
+  const [darkTheme] = useContext(ThemeContext)
   const [pokemonList, setPokemonList] = useState([])
   let ignore = false
-  
   const API = `https://pokeapi.co/api/v2/pokemon?limit=20&offset=${pageOffset}` 
 
   const fetchPokemon = async () => {
     const res = await fetch(API)
     const { results } = await res.json()
     let pokeArray = []
-
     const fetchPokemonData = async (array) => {
       for(let i = 0; i < array.length; i++) {
         const res = await fetch(array[i].url)
@@ -40,7 +40,7 @@ useEffect(() => {
 }, [pageOffset])
 
   return (
-    <main>
+    <main className={darkTheme ? "bg-dark text-light" : "bg-light text-light"}>
       <Nav className="main-nav">
         Pokemon Fetch App
       </Nav>  

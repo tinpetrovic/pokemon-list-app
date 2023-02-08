@@ -47,6 +47,9 @@ nav .nav-image {
 nav .nav-image:hover {
   transform: scale(1.2) rotate(360deg);
 }
+nav .theme-icon:hover {
+  cursor: pointer;
+}
 
 .main-nav {
   background-color: rgb(255, 144, 144);

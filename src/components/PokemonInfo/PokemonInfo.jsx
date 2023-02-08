@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import PokeCarousel from './Carousel/PokeCarousel'
 import { useParams } from 'react-router-dom'
 import Nav from '../Nav/Nav'
 import { cardStyles } from '../../styles/cardStyles'
 import { Container, Row, Col, Button, Spinner } from 'react-bootstrap'
+import { ThemeContext } from '../../context/ThemeContext'
 
 function PokemonInfo() {
   const { pokemonId } = useParams()
   const [pokemon, setPokemon] = useState({})
   const [pokemonMoves, setPokemonMoves] = useState([])
+  const [darkTheme] = useContext(ThemeContext)
   const [movesOffset, setMovesOffset] = useState({start:0, end: 20})
   let ignore = false
   
@@ -53,7 +55,7 @@ function PokemonInfo() {
   }
 
   return (
-    <>
+    <div className={darkTheme ? "bg-dark text-light" : "bg-light text-light"}>
       <Nav className={pokemon.types && cardStyles(pokemon.types)}>{pokemon.name}</Nav>
       
       {
@@ -84,12 +86,12 @@ function PokemonInfo() {
           }
         </Row>
         <Row className='flex-row justify-content-center mb-4'>
-          <Button className='w-25' variant="outline-secondary" onClick={handlePrev} disabled={movesOffset.start < 20}>Prev</Button>
-          <Button className='w-25' variant="outline-secondary" onClick={handleNext} disabled={pokemon.moves && movesOffset.end >= pokemon.moves.length - 20}>Next</Button>
+          <Button className='w-25' variant={darkTheme ? "outline-light" : "outline-secondary"} onClick={handlePrev} disabled={movesOffset.start < 20}>Prev</Button>
+          <Button className='w-25' variant={darkTheme ? "outline-light" : "outline-secondary"} onClick={handleNext} disabled={pokemon.moves && movesOffset.end >= pokemon.moves.length - 20}>Next</Button>
         </Row>
     </Container>
 
-    </>
+    </div>
   )
 }
 
