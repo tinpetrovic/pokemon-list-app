@@ -7,13 +7,14 @@ const cardStyles = (pokemonTypes) => {
     (types[0] === "poison" && "card-pokemon text-success grass") ||
     (types[0] === "fire" && "card-pokemon text-danger fire") ||
     (types[0] === "water" && "card-pokemon text-primary water") ||
+    (types[0] === "ice" && "card-pokemon text-primary water") ||
     (types[0] === "electric" && "card-pokemon text-warning electric") ||
     (types[0] === "ground" && "card-pokemon text-dark ground") ||
     (types[0] === "rock" && "card-pokemon text-dark ground") ||
     (types[0] === "fighting" && "card-pokemon text-dark ground") ||
     (types[0] === "psychic" && "card-pokemon text-dark psychic") ||
     (types[0] === "ghost" && "card-pokemon text-dark psychic") ||
-    (types[0] === "normal" && "card-pokemon text-dark normal")
+    ("card-pokemon text-dark normal")
    ]
 }
 
@@ -32,7 +33,7 @@ const progressVariants = (pokemonTypes) => {
     (types[0] === "fighting" && "dark") ||
     (types[0] === "psychic" && "dark") ||
     (types[0] === "ghost" && "dark") ||
-    (types[0] === "normal" && "secondary")
+    ("secondary")
     )
 }
 
