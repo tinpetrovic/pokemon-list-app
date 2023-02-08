@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4a9291bad2fb015432cd",
-    "url": "/pokemon-list-app/static/css/main.0258f98c.chunk.css"
+    "revision": "c07033ec9d87acabf0e9",
+    "url": "/pokemon-list-app/static/css/main.b7005b84.chunk.css"
   },
   {
-    "revision": "4a9291bad2fb015432cd",
-    "url": "/pokemon-list-app/static/js/main.4a9291ba.chunk.js"
+    "revision": "c07033ec9d87acabf0e9",
+    "url": "/pokemon-list-app/static/js/main.c07033ec.chunk.js"
   },
   {
     "revision": "dad8d1375f51e44f158b",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/pokemon-list-app/static/media/pokeballs.6563d6fb.jpg"
   },
   {
-    "revision": "012f8964edc8dd02116fae2e93c62d32",
+    "revision": "340ef4253c7adcd935ea610a4c802215",
     "url": "/pokemon-list-app/index.html"
   }
 ];
